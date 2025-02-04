@@ -1,0 +1,20 @@
+{
+    "fluorez": [
+        {
+            "number": "0.01",
+            "heading": "First Devlog",
+            "details": "The bot is now officially live",
+            "author": "arthehooman",
+            "timestamp": "2025-02-04"
+        }
+    ],
+    "dead_dreams": [
+        {
+            "number": "0.01",
+            "heading": "first devlog",
+            "details": "yay",
+            "author": "arthehooman",
+            "timestamp": "2025-02-04"
+        }
+    ]
+}
