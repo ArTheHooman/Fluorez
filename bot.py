@@ -9,6 +9,7 @@ import os
 import aiohttp
 import requests
 
+TOKEN = os.getenv("Discord_bot_token")
 DEVLOG_FILE = "devlog.json"
 LOGS_PER_PAGE = 5
 VALID_PROJECTS = ["fluorez", "dead_dreams"]
@@ -434,4 +435,4 @@ async def devlogs(ctx, project: str = None):
 
     await ctx.send(embed=embed, view=view)
 
-client.run(secrets.Discord_bot_token)
+client.run(TOKEN)
