@@ -434,4 +434,4 @@ async def devlogs(ctx, project: str = None):
 
     await ctx.send(embed=embed, view=view)
 
-client.run("OTg1MjI4MDM1Mjk5MDgyMjkw.G0N464.JvymZoH4iEaP1fKtni-N_jxfM-LvoXc3HUg2LI")
+client.run(secrets.Discord_bot_token)
