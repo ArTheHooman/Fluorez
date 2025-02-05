@@ -441,6 +441,9 @@ async def devlogs(ctx, project: str = None):
 
     await ctx.send(embed=embed, view=view)
 
+@app.route('/')
+def home():
+    return "Bot is alive!"
 
 def run():
     app.run(host="0.0.0.0", port=8080)
