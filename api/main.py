@@ -8,6 +8,12 @@ import json
 import os
 import aiohttp
 import requests
+from flask import Flask
+from threading import Thread
+
+app = Flask(__name__)
+async def on_ready():
+    print(f"Logged in as {bot.user}")
 
 TOKEN = os.getenv("Discord_bot_token")
 DEVLOG_FILE = "devlog.json"
@@ -434,5 +440,11 @@ async def devlogs(ctx, project: str = None):
         )
 
     await ctx.send(embed=embed, view=view)
+
+
+def run():
+    app.run(host="0.0.0.0", port=8080)
+
+Thread(target=run).start()
 
 client.run(TOKEN)
